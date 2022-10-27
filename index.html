@@ -7,29 +7,34 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="score-container">
-        <h3>HOME</h3>
-        <div class="scorefield">
-          <h4 class="home-score">0</h4>
+    <div class="container-main">
+      <div class="container">
+        <div class="score-container">
+          <h3>HOME</h3>
+          <div class="scorefield">
+            <h4 id="home-score">0</h4>
+          </div>
+          <div class="button-container">
+            <button class="homeplusone" onclick="homePlusOne()">+ 1</button>
+            <button class="homeplustwo" onclick="homePlusTwo()">+ 2</button>
+            <button class="homeplusthree" onclick="homePlusThree()">+ 3</button>
+          </div>
         </div>
-        <div class="button-container">
-          <button class="homeplusone">+1</button>
-          <button class="homeplustwo">+2</button>
-          <button class="homeplusthree">+3</button>
+        <div class="score-container">
+          <h3>GUEST</h3>
+          <div class="scorefield">
+            <h4 id="guest-score">0</h4>
+          </div>
+          <div class="button-container">
+            <button class="guestplusone" onclick="guestPlusOne()">+ 1</button>
+            <button class="guestplustwo" onclick="guestPlusTwo()">+ 2</button>
+            <button class="guestplusthree" onclick="guestPlusThree()">
+              + 3
+            </button>
+          </div>
         </div>
       </div>
-      <div class="score-container">
-        <h3>GUEST</h3>
-        <div class="scorefield">
-          <h4 class="guest-score">0</h4>
-        </div>
-        <div class="button-container">
-          <button class="guestplusone">+1</button>
-          <button class="guestplustwo">+2</button>
-          <button class="guestplusthree">+3</button>
-        </div>
-      </div>
+      <button id="resetBtn" onclick="resetBtn()">Reset</button>
     </div>
     <script src="index.js"></script>
   </body>

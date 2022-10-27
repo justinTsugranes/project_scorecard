@@ -1,3 +1,8 @@
+@font-face {
+  font-family: timerFont;
+  src: url(CursedTimerUlil-Aznm.ttf);
+}
+
 body {
   margin: 0;
   text-align: center;
@@ -6,15 +11,26 @@ body {
   align-items: center;
 }
 
-.container {
+.container-main {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   background-color: #1b244a;
   width: 575px;
   height: 385px;
-  border-radius: ;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
+.container {
+  column-gap: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* main heading */
 h3 {
   font-family: 'Verdana';
   font-weight: 700;
@@ -41,10 +57,11 @@ h3 {
 }
 
 h4 {
+  font-family: timerFont;
   font-weight: 400;
   font-size: 90px;
   line-height: 127px;
-  color: #f94f6d;
+  color: #ff2d52;
 }
 
 /* Buttons */
@@ -56,11 +73,21 @@ h4 {
 }
 
 button {
+  font-family: timerFont;
   background-color: #1b244a;
   color: white;
   border: 1px solid white;
   border-radius: 4px;
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 8px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#resetBtn {
+  margin-top: 30px;
+  width: 100px;
 }
