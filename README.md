@@ -1,5 +1,7 @@
 # Project Scorecard
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fba40d60-3c7a-4c03-a9d2-67cd33a98834/deploy-status)](https://app.netlify.com/sites/justin-tsugranes-scorecard/deploys)
+
 A basketball scorecard using JavaScript
 
 Here is the [live demo](https://justin-tsugranes-scorecard.netlify.app/).
